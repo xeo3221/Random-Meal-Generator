@@ -26,7 +26,7 @@ function displayMeal(meal) {
 
 	ingredientList.innerHTML = ""
 
-	for (let i = 1; i <= 20; i++) {
+	for (let i = 1; i <= 10; i++) {
 		const ingredient = meal[`strIngredient${i}`]
 		const measure = meal[`strMeasure${i}`]
 
@@ -52,6 +52,6 @@ generateButton.addEventListener("click", () => {
 })
 
 generateButton.addEventListener("click", () => {
-	container.style.width = "1000px"
-	container.style.height = "900px"
+	container.style.width = "800px"
+	container.style.height = "600px"
 })
